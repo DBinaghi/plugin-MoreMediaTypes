@@ -9,9 +9,10 @@ Available new types:
 - Microsoft Office Word, Excel e PowerPoint (XML versions);
 - Open Office Writer, Calc e Impress;
 - TXT;
+- RTF (Rich Text Format)
 - HyperText Markup Language (HTML);
 - Adobe's Portable Document Format (PDF);
-- compressed files: ZIP and ARJ.
+- compressed files: ZIP, RAR and ARJ.
 
 ## Installation
 Uncompress files and rename plugin folder "MoreMediaTypes".

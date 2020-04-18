@@ -1,14 +1,14 @@
-# Translation for the Email Notification plugin for Omeka.
-# Copyright (C) 2018 Daniele Binaghi
+# Translation for the More Media Types plugin for Omeka.
+# Copyright (C) 2019-2020 Daniele Binaghi
 # This file is distributed under the same license as the Omeka package.
-# Daniele Binaghi <admin@bitoteko.it>, 2018
+# Daniele Binaghi <admin@bitoteko.it>, 2020
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Email Notification\n"
+"Project-Id-Version: More Media Types\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 11:54+0200\n"
-"PO-Revision-Date: 2018-05-08 12:06+0200\n"
+"POT-Creation-Date: 2020-04-18 11:54+0200\n"
+"PO-Revision-Date: 2020-04-18 12:06+0200\n"
 "Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -17,138 +17,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: EmailNotificationPlugin.php:18
-msgid "New Item added"
-msgstr "Nuovo documento aggiunto"
+#: config_form.php:14
+msgid ""
+"Please note: when enabling new media types, check that they are allowed as per "
+"<a href=\"/admin/settings/edit-security\" title="click to open the configuration "
+"page\" target=\"_blank\">Omeka configuration</a>."
+msgstr ""
+"Attenzione: quando si abilitano nuovi tipi di media, verificare che siano permessi "
+"nella <a href=\"/admin/settings/edit-security\" title="clicca per aprire la pagina "
+"di configurazione\" target=\"_blank\">configurazione di Omeka</a>."
 
-#: EmailNotificationPlugin.php:19
-msgid "A new Item has been added to the Omeka repository."
-msgstr "Un nuovo documento è stato aggiunto all'archivio Omeka."
+#: config_form.php:16
+msgid "Microsoft Office formats"
+msgstr "Formati Microsoft Office"
 
-#: EmailNotificationPlugin.php:20
-msgid "New Collection added"
-msgstr "Nuova collezione aggiunta"
+#: config_form.php:20
+#: config_form.php:46
+msgid "Add standard formats"
+msgstr "Aggiungere formati standard"
 
-#: EmailNotificationPlugin.php:21
-msgid "A new Collection has been added to the Omeka repository."
-msgstr "Una nuova collezione è stata aggiunta all'archivio Omeka."
+#: config_form.php:24
+msgid "If checked, adds images for Microsoft standard formats: Word, Excel and PowerPoint."
+msgstr "Se selezionata, aggiunge le immagini per i formati standard Microsoft Office: Word, Excel e PowerPoint."
 
-#: EmailNotificationPlugin.php:22
-msgid "Admin/editors have been notified about the new addition."
-msgstr "È stata inviata una notifica sulla nuova aggiunta a amministratore/redattori"
+#: config_form.php:32
+msgid "Add XML formats"
+msgstr "Aggiungere formati xml"
 
-#: EmailNotificationPlugin.php:115
-msgid "public"
-msgstr "pubblico"
+#: config_form.php:36
+msgid ""
+"If checked, adds images for Microsoft Office xml formats of Word, Excel and PowerPoint "
+"(warning: check that the media type is allowed in Omeka configuration)."
+msgstr ""
+"Se selezionata, aggiunge le immagini per i formati xml Microsoft Office di Word, Excel "
+"e PowerPoint (attenzione: verificare che il tipo di media sia accettato nella configurazione di Omeka)."
 
-#: EmailNotificationPlugin.php:115
-msgid "private"
-msgstr "privato"
+#: config_form.php:42
+msgid "Open Office formats"
+msgstr "Formati Open Office"
 
-#: EmailNotificationPlugin.php:117
-msgid "The title of the new Item, added by <b>%s</b>, is <b>%s</b>"
-msgstr "Il titolo del nuovo documento, aggiunto da <b>%s</b>, è <b>%s</b>"
+#: config_form.php:50
+msgid "If checked, adds images for Open Office standard formats: Writer, Calc and Impress."
+msgstr "Se selezionata, aggiunge le immagini per i formati standard Open Office: Writer, Calc e Impress."
 
-#: EmailNotificationPlugin.php:118
-msgid "The status of the new Item is <b>%s</b>"
-msgstr "Lo stato del nuovo documento è <b>%s</b>"
+#: config_form.php:56
+msgid "Other formats"
+msgstr "Altri formati"
 
-#: EmailNotificationPlugin.php:119
-msgid "Please check that all data are correct, by clicking"
-msgstr "Per favore, verifica che tutti i dati siano corretti, cliccando"
+#: config_form.php:60
+msgid "Add text format"
+msgstr "Aggiungere formato testo"
 
-#: EmailNotificationPlugin.php:119
-msgid "this link"
-msgstr "questo collegamento"
+#: config_form.php:64
+msgid "If checked, adds image for text format."
+msgstr "Se selezionata, aggiunge una immagine per il formato testo."
 
-#: EmailNotificationPlugin.php:121
-msgid "The new Item, added by <b>%s</b>, does not have a title yet"
-msgstr "Il nuovo documento, aggiunto da <b>%s</b>, non ha ancora un titolo"
+#: config_form.php:72
+msgid "Add RTF format"
+msgstr "Aggiunge formato RTF"
 
-#: EmailNotificationPlugin.php:124
-msgid "No title has been provided for the new Item."
-msgstr "Non è stato fornito alcun titolo per il nuovo documento."
+#: config_form.php:76
+msgid "If checked, adds image for RTF (Rich Text Format) format."
+msgstr "Se selezionata, aggiunge una immagine per il formato RTF (Rich Text Format)."
 
-#: EmailNotificationPlugin.php:136
-msgid "The title of the new Collection, added by <b>%s</b>, è <b>%s</b>"
-msgstr "Il titolo della nuova collezione, aggiunta da <b>%s</b>, è <b>%s</b>"
+#: config_form.php:84
+msgid "Add HTML format"
+msgstr "Aggiungere formato HTML"
 
-#: EmailNotificationPlugin.php:137
-msgid "The status of the new Collection is <b>%s</b>"
-msgstr "Lo stato della nuova collezione è <b>%s</b>"
+#: config_form.php:88
+msgid "If checked, adds image for HTML (HyperText Markup Language) format."
+msgstr "Se selezionata, aggiunge una immagine per il formato HTML (HyperText Markup Language)."
 
-#: EmailNotificationPlugin.php:140
-msgid "The new Collection, added by <b>%s</b>, does not have a title yet"
-msgstr "La nuova collezione, aggiunta da <b>%s</b>, non ha ancora un titolo"
+#: config_form.php:96
+msgid "Add PDF format"
+msgstr "Aggiungere formato PDF"
 
-#: EmailNotificationPlugin.php:143
-msgid "No title has been provided for the new Collection."
-msgstr "Non è stato fornito alcun titolo per la nuova collezione."
+#: config_form.php:100
+msgid "If checked, adds image for PDF (Portable Document Format) format."
+msgstr "Se selezionata, aggiunge una immagine per il formato PDF (Portable Document Format)."
 
-#: config_form:23
-msgid "New Item addition"
-msgstr "Aggiunta nuovo documento"
+#: config_form.php:108
+msgid "Add compressed formats"
+msgstr "Aggiunge formati compressi"
 
-#: config_form:27
-msgid "Enable notification"
-msgstr "Abilita le notifiche"
+#: config_form.php:112
+msgid "If checked, adds image for ZIP, RAR and ARJ compressed formats."
+msgstr "Se selezionata, aggiunge una immagine per i formati compressi ZIP, RAR e ARJ."
 
-#: config_form:31
-msgid "If checked, sends a notification every time a new Item is added."
-msgstr "Se selezionato, fa inviare una notifica ogni volta che un nuovo documento viene aggiunto."
+#: config_form.php:118
+msgid "Default images"
+msgstr "Immagini standard"
 
-#: config_form:39
-msgid "E-mail subject"
-msgstr "Oggetto dell'e-mail"
+#: config_form.php:122
+msgid "Change default images"
+msgstr "Sostituire immagini standard"
 
-#: config_form:43
-msgid "The subject line for the notification e-mail sent to the recipients."
-msgstr "L'oggetto dell'e-mail di notifica inviata ai destinatari."
-
-#: config_form:51
-msgid "E-mail message"
-msgstr "Messaggio e-mail"
-
-#: config_form:55
-msgid "The beginning of the notification message sent to the recipients."
-msgstr "L'inizio del messaggio di notifica inviato ai destinatari."
-
-#: config_form:61
-msgid "New Collection addition"
-msgstr "Aggiunta nuova collezione"
-
-#: config_form:69
-msgid "If checked, sends a notification every time a new Collection is added."
-msgstr "Se selezionato, fa inviare una notifica ogni volta che una nuova collezione viene aggiunta."
-
-#: config_form:99
-msgid "Recipients"
-msgstr "Destinatari"
-
-#: config_form:103
-msgid "Recipient e-mail address"
-msgstr "Indirizzo e-mail del destinatario"
-
-#: config_form:107
-msgid "The address that will receive the notification."
-msgstr "L'indirizzo che riceverà le notifiche."
-
-#: config_form:115
-msgid "Notify editors"
-msgstr "Informa i redattori"
-
-#: config_form:119
-msgid "If checked, system sends a notification of new submissions also to users with editing role."
-msgstr "Se selezionato, il sistema invia una notifica per le nuove aggiunte anche agli utenti con ruolo di redattore."
-
-#: config_form:125
-msgid "Alerts"
-msgstr "Avvisi"
-
-#: config_form:129
-msgid "Alert contributor about notification"
-msgstr "Avvisa contributore della notifica"
-
-#: config_form:133
-msgid "If checked, system shows an alert informing contributor about the notification."
-msgstr "Se selezionato, il sistema mostra un avviso che informa il contributore dell'invio delle notifiche."
+#: config_form.php:126
+msgid "If checked, changes default images for Image, Audio and Video formats."
+msgstr "Se selezionata, sostituisce le immagini standard per i formati Image, Audio, Video."

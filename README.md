@@ -2,7 +2,7 @@
 
 ## Description
 
-Plugin for Omeka Classic. Once installed and active, allows users to add new shiny fallback thumbnails for extra media types (PDF, Ms-Office, Open Office, compressed files etc.), as well as default images (video, picture, text).
+Plugin for Omeka Classic. Once installed and active, allows users to add new shiny fallback thumbnails for extra media types (PDF, Ms-Office, Open Office, compressed files etc.), as well as default images (video, picture, text and generic file).
 
 Available new types:
 - Microsoft Office Word, Excel e PowerPoint;

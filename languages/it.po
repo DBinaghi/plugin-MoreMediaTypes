@@ -113,5 +113,5 @@ msgid "Change default images"
 msgstr "Sostituire immagini standard"
 
 #: config_form.php:126
-msgid "If checked, changes default images for Image, Audio and Video formats."
-msgstr "Se selezionata, sostituisce le immagini standard per i formati Image, Audio, Video."
+msgid "If checked, changes default images for Image, Audio and Video formats, as well as the default fallback one."
+msgstr "Se selezionata, sostituisce le immagini standard per i formati Image, Audio, Video, e pure quella di default."

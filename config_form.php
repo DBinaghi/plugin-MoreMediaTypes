@@ -115,7 +115,7 @@
 	</div>
 </div>
 
-<h2><?php echo __('Standard images'); ?></h2>
+<h2><?php echo __('Default images'); ?></h2>
 
 <div class="field">
 	<div class="two columns alpha">
@@ -123,7 +123,7 @@
 	</div>
 	<div class="inputs five columns omega">
 		<p class="explanation">
-			<?php echo __('If checked, changes default images for Image, Audio and Video formats.'); ?>
+			<?php echo __('If checked, changes default images for Image, Audio and Video formats, as well as the default fallback one.'); ?>
 		</p>
 		<?php echo $view->formCheckbox('more_media_types_replacestandardicons', $replace_standard_icons, null, array('1', '0')); ?>
 	</div>

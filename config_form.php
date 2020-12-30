@@ -7,6 +7,7 @@
 	$html_format = get_option('more_media_types_html');
 	$pdf_format = get_option('more_media_types_pdf');
 	$compressed_format = get_option('more_media_types_compressed');
+	$ebook_format = get_option('more_media_types_ebook');
 	$replace_standard_icons = get_option('more_media_types_replacestandardicons');
 	$view = get_view();
 ?>
@@ -100,6 +101,18 @@
 			<?php echo __('If checked, adds image for PDF (Portable Document Format) format.'); ?>
 		</p>
 		<?php echo $view->formCheckbox('more_media_types_pdf', $pdf_format, null, array('1', '0')); ?>
+	</div>
+</div>
+
+<div class="field">
+	<div class="two columns alpha">
+		<?php echo $view->formLabel('more_media_types_ebook', __('Add eBook formats (ePub & MOBI)')); ?>
+	</div>
+	<div class="inputs five columns omega">
+		<p class="explanation">
+			<?php echo __('If checked, adds image for eBook (ePub & MOBI) formats.'); ?>
+		</p>
+		<?php echo $view->formCheckbox('more_media_types_ebook', $ebook_format, null, array('1', '0')); ?>
 	</div>
 </div>
 

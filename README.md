@@ -12,6 +12,7 @@ Available new types:
 - RTF (Rich Text Format)
 - HyperText Markup Language (HTML);
 - Adobe's Portable Document Format (PDF);
+- eBook formats: ePub and MOBI;
 - compressed files: ZIP, RAR and ARJ.
 
 ## Installation

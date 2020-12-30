@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: config_form.php:14
+#: config_form.php:15
 msgid ""
 "Please note: when enabling new media types, check that they are allowed as per "
 "<a href=\"/admin/settings/edit-security\" title="click to open the configuration "
@@ -27,24 +27,24 @@ msgstr ""
 "nella <a href=\"/admin/settings/edit-security\" title="clicca per aprire la pagina "
 "di configurazione\" target=\"_blank\">configurazione di Omeka</a>."
 
-#: config_form.php:16
+#: config_form.php:17
 msgid "Microsoft Office formats"
 msgstr "Formati Microsoft Office"
 
-#: config_form.php:20
-#: config_form.php:46
+#: config_form.php:21
+#: config_form.php:47
 msgid "Add standard formats"
 msgstr "Aggiungere formati standard"
 
-#: config_form.php:24
+#: config_form.php:25
 msgid "If checked, adds images for Microsoft standard formats: Word, Excel and PowerPoint."
 msgstr "Se selezionata, aggiunge le immagini per i formati standard Microsoft Office: Word, Excel e PowerPoint."
 
-#: config_form.php:32
+#: config_form.php:33
 msgid "Add XML formats"
 msgstr "Aggiungere formati xml"
 
-#: config_form.php:36
+#: config_form.php:37
 msgid ""
 "If checked, adds images for Microsoft Office xml formats of Word, Excel and PowerPoint "
 "(warning: check that the media type is allowed in Omeka configuration)."
@@ -52,66 +52,74 @@ msgstr ""
 "Se selezionata, aggiunge le immagini per i formati xml Microsoft Office di Word, Excel "
 "e PowerPoint (attenzione: verificare che il tipo di media sia accettato nella configurazione di Omeka)."
 
-#: config_form.php:42
+#: config_form.php:43
 msgid "Open Office formats"
 msgstr "Formati Open Office"
 
-#: config_form.php:50
+#: config_form.php:51
 msgid "If checked, adds images for Open Office standard formats: Writer, Calc and Impress."
 msgstr "Se selezionata, aggiunge le immagini per i formati standard Open Office: Writer, Calc e Impress."
 
-#: config_form.php:56
+#: config_form.php:57
 msgid "Other formats"
 msgstr "Altri formati"
 
-#: config_form.php:60
+#: config_form.php:61
 msgid "Add text format"
 msgstr "Aggiungere formato testo"
 
-#: config_form.php:64
+#: config_form.php:65
 msgid "If checked, adds image for text format."
 msgstr "Se selezionata, aggiunge una immagine per il formato testo."
 
-#: config_form.php:72
+#: config_form.php:73
 msgid "Add RTF format"
 msgstr "Aggiunge formato RTF"
 
-#: config_form.php:76
+#: config_form.php:77
 msgid "If checked, adds image for RTF (Rich Text Format) format."
 msgstr "Se selezionata, aggiunge una immagine per il formato RTF (Rich Text Format)."
 
-#: config_form.php:84
+#: config_form.php:85
 msgid "Add HTML format"
 msgstr "Aggiungere formato HTML"
 
-#: config_form.php:88
+#: config_form.php:89
 msgid "If checked, adds image for HTML (HyperText Markup Language) format."
 msgstr "Se selezionata, aggiunge una immagine per il formato HTML (HyperText Markup Language)."
 
-#: config_form.php:96
+#: config_form.php:97
 msgid "Add PDF format"
 msgstr "Aggiungere formato PDF"
 
-#: config_form.php:100
+#: config_form.php:101
 msgid "If checked, adds image for PDF (Portable Document Format) format."
 msgstr "Se selezionata, aggiunge una immagine per il formato PDF (Portable Document Format)."
 
-#: config_form.php:108
+#: config_form.php:109
+msgid "Add eBook formats (ePub & MOBI)"
+msgstr "Aggiunge formati eBook (ePub e MOBI)"
+
+#: config_form.php:113
+msgid "If checked, adds image for eBook (ePub & MOBI) formats."
+msgstr "Se selezionata, aggiunge una immagine per i formati eBook ePub e MOBI."
+
+#: config_form.php:121
 msgid "Add compressed formats"
 msgstr "Aggiunge formati compressi"
 
-#: config_form.php:112
+#: config_form.php:125
 msgid "If checked, adds image for ZIP, RAR and ARJ compressed formats."
 msgstr "Se selezionata, aggiunge una immagine per i formati compressi ZIP, RAR e ARJ."
 
-#: config_form.php:118
+#: config_form.php:131
 msgid "Default images"
 msgstr "Immagini standard"
 
-#: config_form.php:122
+#: config_form.php:135
 msgid "Change default images"
 msgstr "Sostituire immagini standard"
 
-#: config_form.php:126
+#: config_form.php:139
 msgid "If checked, changes default images for Image, Audio and Video formats, as well as the default fallback one."
 msgstr "Se selezionata, sostituisce le immagini standard per i formati Image, Audio, Video, e pure quella di default."

@@ -3,39 +3,41 @@
 /**
  * @version $Id$
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
- * @copyright Daniele Binaghi, 2019
+ * @copyright Daniele Binaghi, 2019-2020
  * @package MoreMediaTypes
  */
 
 class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 {
-	const MIME_MS_DOC   = 'application/doc';
-	const MIME_MS_DOC_2 = 'application/ms-doc';
-	const MIME_MS_DOC_3 = 'application/msword';
-	const MIME_MS_XLS   = 'application/excel';
-	const MIME_MS_XLS_2 = 'application/vnd.ms-excel';
-	const MIME_MS_XLS_3 = 'application/vnd.ms-office';
-	const MIME_MS_PPT   = 'application/powerpoint';
-	const MIME_MS_PPT_2 = 'application/mspowerpoint';
-	const MIME_MS_PPT_3 = 'application/vnd.ms-powerpoint';
-	const MIME_MS_DOCX  = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
-	const MIME_MS_XLSX  = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-	const MIME_MS_PPTX  = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
-	const MIME_OOO_ODT  = 'application/vnd.oasis.opendocument.text';
-	const MIME_OOO_SXC  = 'application/vnd.oasis.opendocument.spreadsheet';
-	const MIME_OOO_SXI  = 'application/vnd.oasis.opendocument.presentation';
-	const MIME_TEXT     = 'text/plain';
+	const MIME_MS_DOC	= 'application/doc';
+	const MIME_MS_DOC_2	= 'application/ms-doc';
+	const MIME_MS_DOC_3	= 'application/msword';
+	const MIME_MS_XLS	= 'application/excel';
+	const MIME_MS_XLS_2	= 'application/vnd.ms-excel';
+	const MIME_MS_XLS_3	= 'application/vnd.ms-office';
+	const MIME_MS_PPT	= 'application/powerpoint';
+	const MIME_MS_PPT_2	= 'application/mspowerpoint';
+	const MIME_MS_PPT_3	= 'application/vnd.ms-powerpoint';
+	const MIME_MS_DOCX	= 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+	const MIME_MS_XLSX	= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+	const MIME_MS_PPTX	= 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
+	const MIME_OOO_ODT	= 'application/vnd.oasis.opendocument.text';
+	const MIME_OOO_SXC	= 'application/vnd.oasis.opendocument.spreadsheet';
+	const MIME_OOO_SXI	= 'application/vnd.oasis.opendocument.presentation';
+	const MIME_TEXT		= 'text/plain';
 	const MIME_RTF		= 'application/rtf';
 	const MIME_RTF_2	= 'text/rtf';
-	const MIME_HTML     = 'text/html';
-	const MIME_ZIP      = 'application/zip';
-	const MIME_ARJ      = 'application/arj';
-	const MIME_RAR      = 'application/x-rar';
-	const MIME_PDF      = 'application/pdf';
-	const MIME_AUDIO    = 'audio';
-	const MIME_IMAGE    = 'image';
-	const MIME_VIDEO    = 'video';
-	const MIME_GENERIC  = 'generic';
+	const MIME_HTML		= 'text/html';
+	const MIME_ZIP		= 'application/zip';
+	const MIME_ARJ		= 'application/arj';
+	const MIME_RAR		= 'application/x-rar';
+	const MIME_PDF		= 'application/pdf';
+	const MIME_EPUB		= 'application/epub+zip';
+	const MIME_MOBI		= 'application/vnd.amazon.mobi8-ebook';
+	const MIME_AUDIO	= 'audio';
+	const MIME_IMAGE	= 'image';
+	const MIME_VIDEO	= 'video';
+	const MIME_GENERIC	= 'generic';
 
 	protected $_hooks = array(
 		'install',
@@ -54,6 +56,7 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 		set_option('more_media_types_rtf', '0');	
 		set_option('more_media_types_html', '0');	
 		set_option('more_media_types_pdf', '0');	
+		set_option('more_media_types_ebook', '0');	
 		set_option('more_media_types_compressed', '0');	
 		set_option('more_media_types_replacestandardicons', '0');	
 	}
@@ -67,6 +70,7 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 		delete_option('more_media_types_rtf');
 		delete_option('more_media_types_html');
 		delete_option('more_media_types_pdf');
+		delete_option('more_media_types_ebook');
 		delete_option('more_media_types_compressed');
 		delete_option('more_media_types_replacestandardicons');
 	 }
@@ -76,7 +80,7 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 		add_translation_source(dirname(__FILE__) . '/languages');
 
 		if (get_option(more_media_types_msofficeformats)) {
-			add_file_fallback_image(self::MIME_MS_DOC, 	'fallback-ms_word.png');
+			add_file_fallback_image(self::MIME_MS_DOC,	'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_DOC_2,'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_DOC_3,'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_XLS, 	'fallback-ms_excel.png');
@@ -101,6 +105,10 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 		if (get_option(more_media_types_rtf)) 	add_file_fallback_image(self::MIME_RTF_2,	'fallback-rtf.png');
 		if (get_option(more_media_types_html)) 	add_file_fallback_image(self::MIME_HTML,	'fallback-html.png');
 		if (get_option(more_media_types_pdf)) 	add_file_fallback_image(self::MIME_PDF,		'fallback-pdf.png');
+		if (get_option(more_media_types_ebook)) {
+			add_file_fallback_image(self::MIME_EPUB, 'fallback-epub.png');
+			add_file_fallback_image(self::MIME_MOBI, 'fallback-mobi.png');
+		}
 		if (get_option(more_media_types_compressed)) {
 			add_file_fallback_image(self::MIME_ZIP, 'fallback-compressed.png');
 			add_file_fallback_image(self::MIME_ARJ, 'fallback-compressed.png');
@@ -124,6 +132,7 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 		set_option('more_media_types_rtf', $post['more_media_types_rtf']);
 		set_option('more_media_types_html', $post['more_media_types_html']);
 		set_option('more_media_types_pdf', $post['more_media_types_pdf']);
+		set_option('more_media_types_ebook', $post['more_media_types_ebook']);
 		set_option('more_media_types_compressed', $post['more_media_types_text']);
 		set_option('more_media_types_replacestandardicons', $post['more_media_types_replacestandardicons']);
 	}

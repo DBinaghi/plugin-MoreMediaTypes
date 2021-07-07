@@ -34,6 +34,8 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 	const MIME_PDF		= 'application/pdf';
 	const MIME_EPUB		= 'application/epub+zip';
 	const MIME_MOBI		= 'application/vnd.amazon.mobi8-ebook';
+	const MIME_MOBI_2	= 'application/x-mobipocket-ebook';
+	const MIME_MOBI_3	= 'application/vnd.amazon.ebook';
 	const MIME_AUDIO	= 'audio';
 	const MIME_IMAGE	= 'image';
 	const MIME_VIDEO	= 'video';
@@ -79,7 +81,7 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 	{
 		add_translation_source(dirname(__FILE__) . '/languages');
 
-		if (get_option(more_media_types_msofficeformats)) {
+		if (get_option('more_media_types_msofficeformats')) {
 			add_file_fallback_image(self::MIME_MS_DOC,	'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_DOC_2,'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_DOC_3,'fallback-ms_word.png');
@@ -90,31 +92,33 @@ class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 			add_file_fallback_image(self::MIME_MS_PPT_2,'fallback-ms_powerpoint.png');
 			add_file_fallback_image(self::MIME_MS_PPT_3,'fallback-ms_powerpoint.png');
 		}
-		if (get_option(more_media_types_msofficexformats)) {
+		if (get_option('more_media_types_msofficexformats')) {
 			add_file_fallback_image(self::MIME_MS_DOCX, 'fallback-ms_word.png');
 			add_file_fallback_image(self::MIME_MS_XLSX, 'fallback-ms_excel.png');
 			add_file_fallback_image(self::MIME_MS_PPTX, 'fallback-ms_powerpoint.png');
 		}
-		if (get_option(more_media_types_openofficeformats)) {
+		if (get_option('more_media_types_openofficeformats')) {
 			add_file_fallback_image(self::MIME_OOO_ODT,	'fallback-ooo_writer.png');
 			add_file_fallback_image(self::MIME_OOO_SXC,	'fallback-ooo_calc.png');
 			add_file_fallback_image(self::MIME_OOO_SXI,	'fallback-ooo_impress.png');
 		}
-		if (get_option(more_media_types_text)) 	add_file_fallback_image(self::MIME_TEXT,	'fallback-text.png');
-		if (get_option(more_media_types_rtf)) 	add_file_fallback_image(self::MIME_RTF,		'fallback-rtf.png');
-		if (get_option(more_media_types_rtf)) 	add_file_fallback_image(self::MIME_RTF_2,	'fallback-rtf.png');
-		if (get_option(more_media_types_html)) 	add_file_fallback_image(self::MIME_HTML,	'fallback-html.png');
-		if (get_option(more_media_types_pdf)) 	add_file_fallback_image(self::MIME_PDF,		'fallback-pdf.png');
-		if (get_option(more_media_types_ebook)) {
-			add_file_fallback_image(self::MIME_EPUB, 'fallback-epub.png');
-			add_file_fallback_image(self::MIME_MOBI, 'fallback-mobi.png');
+		if (get_option('more_media_types_text')) 	add_file_fallback_image(self::MIME_TEXT,	'fallback-text.png');
+		if (get_option('more_media_types_rtf')) 	add_file_fallback_image(self::MIME_RTF,		'fallback-rtf.png');
+		if (get_option('more_media_types_rtf')) 	add_file_fallback_image(self::MIME_RTF_2,	'fallback-rtf.png');
+		if (get_option('more_media_types_html')) 	add_file_fallback_image(self::MIME_HTML,	'fallback-html.png');
+		if (get_option('more_media_types_pdf')) 	add_file_fallback_image(self::MIME_PDF,		'fallback-pdf.png');
+		if (get_option('more_media_types_ebook')) {
+			add_file_fallback_image(self::MIME_EPUB,	'fallback-epub.png');
+			add_file_fallback_image(self::MIME_MOBI,	'fallback-mobi.png');
+			add_file_fallback_image(self::MIME_MOBI_2,	'fallback-mobi.png');
+			add_file_fallback_image(self::MIME_MOBI_3,	'fallback-mobi.png');
 		}
-		if (get_option(more_media_types_compressed)) {
+		if (get_option('more_media_types_compressed')) {
 			add_file_fallback_image(self::MIME_ZIP, 'fallback-compressed.png');
 			add_file_fallback_image(self::MIME_ARJ, 'fallback-compressed.png');
 			add_file_fallback_image(self::MIME_RAR, 'fallback-compressed.png');
 		}
-		if (get_option(more_media_types_replacestandardicons)) {
+		if (get_option('more_media_types_replacestandardicons')) {
 		    add_file_fallback_image(self::MIME_AUDIO,	'fallback-audio1.png');
 		    add_file_fallback_image(self::MIME_IMAGE,	'fallback-image1.png');
 		    add_file_fallback_image(self::MIME_VIDEO,	'fallback-video1.png');

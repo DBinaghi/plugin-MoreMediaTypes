@@ -1,14 +1,15 @@
 # Translation for the More Media Types plugin for Omeka.
-# Copyright (C) 2019-2020 Daniele Binaghi
+# Copyright (C) 2019-2022 Daniele Binaghi
 # This file is distributed under the same license as the Omeka package.
-# Daniele Binaghi <admin@bitoteko.it>, 2020
+# Daniele Binaghi <admin@bitoteko.it>, 2022
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: More Media Types\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-18 11:54+0200\n"
-"PO-Revision-Date: 2020-04-18 12:06+0200\n"
+"PO-Revision-Date: 2022-10-31 17:57+0200\n"
 "Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
 "Language-Team: Italian\n"
 "Language: it\n"

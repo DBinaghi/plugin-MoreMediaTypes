@@ -1,0 +1,120 @@
+# Translation for the More Media Types plugin for Omeka.
+# Copyright (C) 2019-2022 Daniele Binaghi
+# This file is distributed under the same license as the Omeka package.
+# Daniele Binaghi <admin@bitoteko.it>, 2022
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: More Media Types\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-18 11:54+0200\n"
+"PO-Revision-Date: 2022-10-31 17:57+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config_form.php:15
+msgid ""
+"Please note: when enabling new media types, check that they are allowed as per "
+"<a href=\"/admin/settings/edit-security\" title="click to open the configuration "
+"page\" target=\"_blank\">Omeka configuration</a>."
+msgstr ""
+
+#: config_form.php:17
+msgid "Microsoft Office formats"
+msgstr ""
+
+#: config_form.php:21
+#: config_form.php:47
+msgid "Add standard formats"
+msgstr ""
+
+#: config_form.php:25
+msgid "If checked, adds images for Microsoft standard formats: Word, Excel and PowerPoint."
+msgstr ""
+
+#: config_form.php:33
+msgid "Add XML formats"
+msgstr ""
+
+#: config_form.php:37
+msgid ""
+"If checked, adds images for Microsoft Office xml formats of Word, Excel and PowerPoint "
+"(warning: check that the media type is allowed in Omeka configuration)."
+msgstr ""
+
+#: config_form.php:43
+msgid "Open Office formats"
+msgstr ""
+
+#: config_form.php:51
+msgid "If checked, adds images for Open Office standard formats: Writer, Calc and Impress."
+msgstr ""
+
+#: config_form.php:57
+msgid "Other formats"
+msgstr ""
+
+#: config_form.php:61
+msgid "Add text format"
+msgstr ""
+
+#: config_form.php:65
+msgid "If checked, adds image for text format."
+msgstr ""
+
+#: config_form.php:73
+msgid "Add RTF format"
+msgstr ""
+
+#: config_form.php:77
+msgid "If checked, adds image for RTF (Rich Text Format) format."
+msgstr ""
+
+#: config_form.php:85
+msgid "Add HTML format"
+msgstr ""
+
+#: config_form.php:89
+msgid "If checked, adds image for HTML (HyperText Markup Language) format."
+msgstr ""
+
+#: config_form.php:97
+msgid "Add PDF format"
+msgstr ""
+
+#: config_form.php:101
+msgid "If checked, adds image for PDF (Portable Document Format) format."
+msgstr ""
+
+#: config_form.php:109
+msgid "Add eBook formats (ePub & MOBI)"
+msgstr ""
+
+#: config_form.php:113
+msgid "If checked, adds image for eBook (ePub & MOBI) formats."
+msgstr ""
+
+#: config_form.php:121
+msgid "Add compressed formats"
+msgstr ""
+
+#: config_form.php:125
+msgid "If checked, adds image for ZIP, RAR and ARJ compressed formats."
+msgstr ""
+
+#: config_form.php:131
+msgid "Default images"
+msgstr ""
+
+#: config_form.php:135
+msgid "Change default images"
+msgstr ""
+
+#: config_form.php:139
+msgid "If checked, changes default images for Image, Audio and Video formats, as well as the default fallback one."
+msgstr ""

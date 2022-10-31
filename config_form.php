@@ -1,14 +1,4 @@
 <?php 
-	$ms_office_formats = get_option('more_media_types_msofficeformats');
-	$ms_office_x_formats = get_option('more_media_types_msofficexformats');
-	$open_office_formats = get_option('more_media_types_openofficeformats');
-	$text_format = get_option('more_media_types_text');
-	$rtf_format = get_option('more_media_types_rtf');
-	$html_format = get_option('more_media_types_html');
-	$pdf_format = get_option('more_media_types_pdf');
-	$compressed_format = get_option('more_media_types_compressed');
-	$ebook_format = get_option('more_media_types_ebook');
-	$replace_standard_icons = get_option('more_media_types_replacestandardicons');
 	$view = get_view();
 ?>
 
@@ -24,7 +14,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds images for Microsoft standard formats: Word, Excel and PowerPoint.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_msofficeformats', $ms_office_formats, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_msofficeformats', get_option('more_media_types_msofficeformats'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -36,7 +26,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds images for Microsoft Office xml formats of Word, Excel and PowerPoint (warning: check that the media type is allowed in Omeka configuration).'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_msofficexformats', $ms_office_x_formats, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_msofficexformats', get_option('more_media_types_msofficexformats'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -50,7 +40,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds images for Open Office standard formats: Writer, Calc and Impress.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_openofficeformats', $open_office_formats, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_openofficeformats', get_option('more_media_types_openofficeformats'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -64,7 +54,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for text format.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_text', $text_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_text', get_option('more_media_types_text'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -76,7 +66,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for RTF (Rich Text Format) format.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_rtf', $rtf_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_rtf', get_option('more_media_types_rtf'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -88,7 +78,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for HTML (HyperText Markup Language) format.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_html', $html_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_html', get_option('more_media_types_html'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -100,7 +90,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for PDF (Portable Document Format) format.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_pdf', $pdf_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_pdf', get_option('more_media_types_pdf'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -112,7 +102,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for eBook (ePub & MOBI) formats.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_ebook', $ebook_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_ebook', get_option('more_media_types_ebook'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -124,7 +114,7 @@
 		<p class="explanation">
 			<?php echo __('If checked, adds image for ZIP, RAR and ARJ compressed formats.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_compressed', $compressed_format, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_compressed', get_option('more_media_types_compressed'), null, array('1', '0')); ?>
 	</div>
 </div>
 
@@ -138,6 +128,6 @@
 		<p class="explanation">
 			<?php echo __('If checked, changes default images for Image, Audio and Video formats, as well as the default fallback one.'); ?>
 		</p>
-		<?php echo $view->formCheckbox('more_media_types_replacestandardicons', $replace_standard_icons, null, array('1', '0')); ?>
+		<?php echo $view->formCheckbox('more_media_types_replacestandardicons', get_option('more_media_types_replacestandardicons'), null, array('1', '0')); ?>
 	</div>
 </div>

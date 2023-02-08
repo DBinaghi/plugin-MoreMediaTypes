@@ -7,11 +7,6 @@
 	 * @license https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html CeCILL v2.1
 	 */
 
-	/**
-	 * MoreMediaTypes plugin class
-	 * 
-	 * @package MoreMediaTypes
-
 	class MoreMediaTypesPlugin extends Omeka_Plugin_AbstractPlugin
 	{
 		const MIME_MS_DOC	= 'application/doc';
